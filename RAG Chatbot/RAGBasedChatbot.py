@@ -19,8 +19,8 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 embeddingsModel = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 
 #Vector Database
-from langchain_community.vectorstores import FAISS
-vectorDB = FAISS.from_documents(documents=texts, embedding=embeddingsModel)
+# from langchain_community.vectorstores import FAISS
+# vectorDB = FAISS.from_documents(documents=texts, embedding=embeddingsModel)
 
 # Mongo DB as Vector DB
 MONGODB_CLUSTER_URI = "mongodb+srv://biplabkrsil98:biplab1998@cluster0.i1br1sm.mongodb.net/"
