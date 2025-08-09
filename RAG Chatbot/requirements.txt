@@ -1,0 +1,9 @@
+langchain
+langchain_google_genai
+streamlit
+dotenv
+langchain_community
+faiss-cpu
+langchain-mongodb
+pymongo
+pypdf
