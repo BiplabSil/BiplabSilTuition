@@ -23,7 +23,8 @@ embeddingsModel = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-00
 # vectorDB = FAISS.from_documents(documents=texts, embedding=embeddingsModel)
 
 # Mongo DB as Vector DB
-MONGODB_CLUSTER_URI = "mongodb+srv://biplabkrsil98:biplab1998@cluster0.i1br1sm.mongodb.net/"
+import getpass
+MONGODB_CLUSTER_URI = getpass.getpass('MONGODB_CLUSTER_URI')
 from langchain_mongodb import MongoDBAtlasVectorSearch
 from pymongo import MongoClient
 client = MongoClient(MONGODB_CLUSTER_URI)
