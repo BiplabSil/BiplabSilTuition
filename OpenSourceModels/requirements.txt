@@ -2,3 +2,7 @@ transformers
 langchain_huggingface
 accelerate
 gradio
+
+matplotlib
+pandas
+openpyxl
